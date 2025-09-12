@@ -7,7 +7,6 @@ A full-featured **personal finance management system** where users can track exp
 
 ## ✨ Features
 
-* **Dual User Roles**: Separate dashboards for **Individual Users** and **Admin** (for managing data and analytics).
 * **Receipt Scanning**: OCR-based extraction of expense details from uploaded receipts.
 * **Budget Tracking**: Categorization of expenses and real-time budget monitoring.
 * **Goal Setting**: Users can set financial goals (e.g., saving for a laptop or vacation) and track progress.

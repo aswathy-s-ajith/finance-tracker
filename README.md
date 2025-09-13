@@ -1,31 +1,12 @@
+# React + Vite
 
-# 💰 AI-Powered Finance & Budget Tracker
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-A full-featured **personal finance management system** where users can track expenses, set savings goals, and receive AI-powered insights for smarter financial decisions. Built with a **React frontend (using Vite)** and a **Node.js/Express or Django/Flask backend**, it integrates **OCR receipt scanning**, **budget planning**, and a personalized **AI chatbot**.
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## ✨ Features
+## Expanding the ESLint configuration
 
-* **Receipt Scanning**: OCR-based extraction of expense details from uploaded receipts.
-* **Budget Tracking**: Categorization of expenses and real-time budget monitoring.
-* **Goal Setting**: Users can set financial goals (e.g., saving for a laptop or vacation) and track progress.
-* **Dashboard & Analytics**: Visualizations of spending trends, category breakdowns, and monthly summaries.
-* **AI Chatbot**: Provides financial tips, spending alerts, and personalized savings suggestions.
-* **Integration with Payment Apps**: Optional integration with Google Pay/UPI APIs for real-time transaction sync.
-* **Notifications & Reminders**: Alerts for bill payments, overspending, and hitting budget limits.
-
----
-
-## 🛠️ Tech Stack
-
-* **Backend**: Node.js (Express) / Python (Flask or Django)
-* **Frontend**: React (Vite)
-* **Database**: MongoDB / PostgreSQL
-* **OCR**: Tesseract OCR / Google Vision API
-* **AI/ML**: TensorFlow / PyTorch (for chatbot + recommendation engine)
-* **Integrations**: Google Pay/UPI APIs, Firebase Cloud Messaging
-* **Deployment**: AWS / Google Cloud / Heroku
-
----
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

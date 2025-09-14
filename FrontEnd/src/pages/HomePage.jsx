@@ -40,7 +40,7 @@ export default function HomePage() {
       <Container maxWidth="sm" sx={{ position: 'relative', zIndex: 2 }}>
         <Button
           component={RouterLink}
-          to="/login"
+          to="/LoginPage"
           variant="contained"
           size="large" 
           endIcon={<ArrowForwardIcon />}

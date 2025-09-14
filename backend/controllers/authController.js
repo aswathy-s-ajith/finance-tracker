@@ -1,29 +1,12 @@
 // SIGNUP
 export const signup = async (req, res, supabase) => {
-  const { email, password, username, full_name } = req.body;
+  const { email, password } = req.body;
   const { data, error } = await supabase.auth.signUp({
     email,
     password,
   });
 
   if (error) return res.status(400).json({ error: error.message });
-
-  // Insert into profiles table after successful signup
-  const userId = data.user?.id;
-  if (userId) {
-    const { error: profileError } = await supabase
-      .from("profiles")
-      .insert([
-        {
-          id: userId,
-          username,
-          full_name,
-        },
-      ]);
-    if (profileError) {
-      return res.status(400).json({ error: profileError.message });
-    }
-  }
   res.json({ user: data.user, session: data.session });
 };
 
